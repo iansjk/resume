@@ -1,0 +1,210 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,12pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{#2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\skillsItem}[2]{
+  \item\small{
+    \textbf{#1}{#2 \vspace{-6pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Ian Kim} & Email : \href{mailto:me@ian.kim}{me@ian.kim}\\
+  \href{http://www.github.com/iansjk}{github.com/iansjk} & Mobile : +1-919-357-4539 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of North Carolina at Chapel Hill}{Chapel Hill, NC}
+      {M.S. Speech and Hearing Sciences, CCC-SLP}{August 2016 -- Dec 2018}
+    \resumeSubheading
+      {University of North Carolina at Chapel Hill}{Chapel Hill, NC}
+      {B.S. Computer Science with Honors, B.A. Linguistics (Phi Beta Kappa, GPA: 3.7)}{August 2009 -- May 2013}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Center for Aphasia and Related Disorders (CARD)}{Chapel Hill, NC}
+      {Contractor}{Aug 2018 - Present}
+      \resumeItemListStart
+        \resumeItem{}
+        {Developed a custom iOS therapy app in Ionic to help stroke survivors regain more fluent speech.}
+        \resumeItem{}
+        {Created a command-line tool to use IBM Watson speech-to-text for automated judgments of stroke survivors' speech intelligibility.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Cheshire Speech and Voice / Wake County Public Schools}{Raleigh, NC}
+      {Speech-Language Pathologist Clinical Fellow (Contractor)}{May 2019 -- Jun 2020}
+      \resumeItemListStart
+        \resumeItem{}
+        {Developed \& carried out speech/language treatment plans for students in special education.}
+        \resumeItem{}
+        {Conducted assessments of students to identify those with special communication needs.}
+      \resumeItemListEnd
+          
+    \resumeSubheading
+      {UNC Student Stores}{Chapel Hill, NC}
+      {Tech Shop Associate}{May 2018 -- Aug 2018}
+      \resumeItemListStart
+        \resumeItem{}
+        {Assisted in distribution of Carolina Computing Initiative laptops to incoming new students.}
+        \resumeItem{}
+        {Provided assistance to students and families for their technology needs on campus.}
+      \resumeItemListEnd
+
+    % \resumeSubheading
+    %   {Global English Speaking}{Chapel Hill, NC}
+    %   {Graduate Research Assistant}{Aug 2018 - Dec 2019}
+    %   \resumeItemListStart
+    %     \resumeItem{}
+    %     {}
+    %   \resumeItemListEnd
+  
+    % \resumeSubheading
+    %   {Accent Modification Services}{Chapel Hill, NC}
+    %   {Self-Employed}{Jan 2018 - May 2019}
+    %   \resumeItemListStart
+    %     \resumeItem{}
+    %     {}
+    %   \resumeItemListEnd
+  
+    \resumeSubheading
+      {UNC-Chapel Hill Center for Cheminformatics Research (CECCR)}{Chapel Hill, NC}
+      {Graduate Research Assistant}{Jan 2012 - Jan 2016}
+      \resumeItemListStart
+        \resumeItem{}
+        {Developed \& maintained Chembench, a website for molecular modeling \& prediction using Java.}
+        \resumeItem{}
+        {Developed ChemoText, a drug discovery tool based on NIH PubMed data using jQuery \& NoSQL.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Social Welfare and Health Informatics Group (SWHIG)}{Chapel Hill, NC}
+      {Undergraduate Research Assistant}{Sep 2011 - May 2012}
+      \resumeItemListStart
+        \resumeItem{}
+        {Assisted in management of North Carolina social welfare programs \& dataset curation using SAS.}
+      \resumeItemListEnd
+    
+    \resumeSubheading
+      {BlackBerry, Ltd.}{Irving, TX}
+      {Java Developer, Student}{May 2011 - Aug 2011}
+      \resumeItemListStart
+        \resumeItem{}
+        {Created a visualization tool for mechanical design team using Django \& jQuery.}  
+        \resumeItem{}
+        {Improved internal Confluence wiki by developing Java plugins for missing functionality.}
+        
+      \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+
+%--------SKILLS------------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \skillsItem
+    {Languages}{: Java, Python, HTML/CSS, SQL, JavaScript, TypeScript, R}
+    \skillsItem
+    {Technologies}{: Git, jQuery, Flask, Django, Travis CI, Ionic, React Native}
+    \skillsItem
+    {Operating Systems}{: Windows, Linux, Mac OS X}
+    \skillsItem
+    {Foreign Languages}{: Japanese, Korean}
+
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+
+%-----------PUBLICATIONS-----------------
+\section{Publications}
+  \resumeSubHeadingListStart
+    \item{Haley, K. L., Cunningham, K. T., \textbf{Kim, I.}, \& Shafer, J. S. (2019). Autonomy-supportive treatment for acquired apraxia of speech: feasibility and therapeutic effect. \textit{Aphasiology}, 1-21.}
+    \item{Capuzzi, S. J., \textbf{Kim, I. S. J.}, Lam, W. I., Thornton, T. E., Muratov, E. N., Pozefsky, D., \& Tropsha, A. (2017). Chembench: a publicly accessible, integrated cheminformatics portal. \textit{Journal of chemical information and modeling}, 57(2), 105-108.}
+  \resumeSubHeadingListEnd
+
+\end{document}

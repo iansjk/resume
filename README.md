@@ -17,4 +17,4 @@ docker run --rm -i -v "$PWD":/data latex pdflatex sourabh_bajaj_resume.tex
 
 ### License
 
-Format is MIT but all the data is owned by Sourabh Bajaj.
+Format is MIT by Sourabh Bajaj. Resume content copyright Ian Kim.
