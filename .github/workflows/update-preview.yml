@@ -1,0 +1,38 @@
+name: Update resume preview
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "resume.tex"
+      - ".github/workflows/update-preview.yml"
+
+jobs:
+  update-preview:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          # Full git history is needed to get a proper list of changed files
+          fetch-depth: 0
+
+      - name: Install LaTeX
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y texlive texlive-latex-extra
+
+      - name: Install poppler-utils
+        run: sudo apt-get install -y poppler-utils
+
+      - name: Compile PDF and generate preview
+        run: |
+          pdflatex resume.tex
+          pdftoppm -png -r 300 -f 1 -l 1 resume.pdf resume_preview
+          mv resume_preview-1.png resume_preview.png
+
+      - name: Commit and push if changed
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add resume_preview.png
+          git diff --cached --quiet || git commit -m "Update resume preview" && git push
